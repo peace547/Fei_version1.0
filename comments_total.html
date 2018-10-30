@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="宁波飞扬旅行社,宁波旅行社,宁波旅游网" />
+<meta name="description" content="飞扬旅游网隶属于浙江飞扬国际旅游集团,宁波旅行社行业第一,全国第八,浙江省首批五星级旅行社,宁波市最佳旅行社.服务热线:4000-365-666" />
+<meta name="apple-mobile-web-app-title" content="飞扬旅游网" />
+<title>飞扬旅游网</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="grayBg" ontouchstart>
+<!-- views start-->
+<div class="views"> 
+  <!-- view-main start-->
+  <div class="view view-main"> 
+    <!-- page start-->
+    <div class="page navbar-fixed"> 
+      <!-- navbar start-->
+      <div class="navbar tmBar">
+        <div class="navbar-inner">
+          <div class="left">
+              <a href="javascript:history.back();" class="link icon-only">
+                  <i class="icon icon-back"></i>
+              </a>
+          </div>
+          <div class="center">旅游评价</div>
+          <div class="right">
+          </div>
+        </div>
+      </div>
+      <!-- navbar END--> 
+      <!-- page-content start-->
+      <div class="page-content comments-page listen">
+        <div class="day-row">
+          <div class="ft18 bold mb15">倾听您的声音</div>
+          <div class="">感谢您选择由飞扬旅游组织和接待的旅行团体。</div>
+          <div class="">让人人都开心快乐是我们不变的承诺，</div>
+          <div class="">让人人都享受优质的服务是我们永远追求的目的。</div>
+        </div>
+        <div class="comments-panel">
+          <div class="comments-question">您是通过何种途径知道飞扬旅游？</div>
+          <div class="comments-icons">
+            <a href="#" class="choose">活动现场</a>
+            <a href="#" class="choose">朋友推荐</a>
+            <a href="#" class="choose">报纸</a>
+            <a href="#" class="choose">公交/电台广告</a>
+            <a href="#" class="choose">其他</a>
+          </div>
+        </div>
+        <div class="comments-panel">
+          <div class="comments-question">此次您选择我们的原因</div>
+          <div class="comments-icons">
+            <a href="#" class="choose">朋友推荐</a>
+            <a href="#" class="choose">性价比高</a>
+            <a href="#" class="choose">广告诱人</a>
+            <a href="#" class="choose">服务到位，品质出色</a>
+            <a href="#" class="choose">以前参加过飞扬团队，感觉不错</a>
+            <a href="#" class="choose">其他</a>
+          </div>
+        </div>
+        <div class="comments-panel">
+          <div class="comments-question">您会再次选择飞扬吗？</div>
+          <div class="comments-icons">
+            <a href="#" class="choose single">一定</a>
+            <a href="#" class="choose single">可能吧</a>
+            <a href="#" class="choose single">不会</a>
+          </div>
+        </div>
+        <div class="area-container">
+          <div class="area-tit">批评与表扬：</div><textarea class="area area1">请输入你的文字</textarea>
+        </div>
+        <div class="area-container">
+          <div class="area-tit">建议与希望：</div><textarea class="area area1">请输入你的文字</textarea>
+        </div>
+        <div class="comments-upload">
+          <a href="#">确认提交</a>
+        </div>
+      </div>
+      <!-- page-content END--> 
+    </div>
+    <!-- page END--> 
+  </div>
+</div>
+<!-- views END--> 
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+<script type="text/javascript" src="js/touch.js"></script> 
+<script type="text/javascript" src="js/app.js"></script> 
+<script>
+$(function(){
+  $('.area').focus(function(){
+    if($(this).val()==='请输入你的文字'){
+      $(this).val('');
+    }
+  });
+  $('.area').blur(function(){
+    if($(this).val()===''){
+      $(this).val('请输入你的文字');  
+    }
+  });
+  $('.comments-icons a').click(function(){
+    if($(this).hasClass('single')){
+      if($(this).hasClass('chosen')){
+        $(this).removeClass('chosen');
+        $(this).addClass('choose');
+      }else{
+        $(this).addClass('chosen');
+        $(this).siblings().removeClass('chosen');
+      }
+    }else{
+      if($(this).hasClass('chosen')){
+        $(this).removeClass('chosen');
+        $(this).addClass('choose');
+      }else{
+        $(this).addClass('chosen');
+        $(this).removeClass('choose');
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="宁波飞扬旅行社,宁波旅行社,宁波旅游网" />
+<meta name="description" content="飞扬旅游网隶属于浙江飞扬国际旅游集团,宁波旅行社行业第一,全国第八,浙江省首批五星级旅行社,宁波市最佳旅行社.服务热线:4000-365-666" />
+<meta name="apple-mobile-web-app-title" content="飞扬旅游网" />
+<title>飞扬旅游网</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="grayBg" ontouchstart>
+<!-- views start-->
+<div class="views"> 
+  <!-- view-main start-->
+  <div class="view view-main"> 
+    <!-- page start-->
+    <div class="page navbar-fixed"> 
+      <!-- navbar start-->
+      <div class="navbar tmBar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="javascript:history.back();" class="link icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center">详情</div>
+            <div class="right">
+            </div>
+        </div>
+      </div>
+      <!-- navbar END--> 
+      <!-- page-content start-->
+      <div class="page-content">
+        <div class="item-row">
+          <div class="item-tit">申请表格</div>
+          <div class="item-detail">适用人群：在职人员,退休人员,在校学生,学龄前儿童,自由职业者。<br>材料描述：赴日申请表一份，正反面打印【重要】。
+          </div>
+        </div>
+        <div class="item-row">
+          <div class="item-tit">模板</div>
+          <div class="item-detail">日本签证申请表.pdf<a href="#" class="download">点击下载</a></div>
+        </div>
+        <div class="item-row">
+          <div class="item-tit">示例</div>
+          <div class="row item-detail">
+            <div class="col-50"><img src="../aFei/images/form_01.png"></div>
+            <div class="col-50"><img src="../aFei/images/form_02.png"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page-content END-->
+      <div class="toolbar trashRow traDur"> <a class="trashBtn alginCenter"  href="#"><i class="iconM i-trash">&nbsp;</i></a> </div>
+    </div>
+    <!-- page END--> 
+  </div>
+</div>
+<!-- views END--> 
+
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+<script type="text/javascript" src="js/touch.js"></script> 
+<script type="text/javascript" src="js/app.js"></script> 
+<script type="text/javascript" src="js/framework7.js"></script> 
+<script>
+var myApp = new Framework7({
+  'modalTitle':'',
+  'modalButtonOk':'确定',
+  'modalButtonCancel':'取消'
+});
+var $$ = Dom7;
+$$('.confirm-ok').on('click', function () {
+    myApp.confirm('您确定要删除么?', function () {
+        //myApp.alert('You clicked Ok button');
+      },
+      function () {
+        //myApp.alert('You clicked Cancel button');
+      });
+});
+</script>
+</body>
+</html>

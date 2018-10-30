@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="宁波飞扬旅行社,宁波旅行社,宁波旅游网" />
+<meta name="description" content="飞扬旅游网隶属于浙江飞扬国际旅游集团,宁波旅行社行业第一,全国第八,浙江省首批五星级旅行社,宁波市最佳旅行社.服务热线:4000-365-666" />
+<meta name="apple-mobile-web-app-title" content="飞扬旅游网" />
+<title>飞扬旅游网</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body ontouchstart>
+<!-- views start-->
+<div class="views"> 
+  <!-- view-main start-->
+  <div class="view view-main"> 
+    <!-- page start-->
+    <div class="page navbar-fixed blankPage"> 
+      <!-- navbar start-->
+      <div class="navbar tmBar">
+        <div class="navbar-inner navbar-on-center">
+          <div class="left"><a class="back link" href="#"> <i class="icon icon-back hBack mr5"></i>返回</a></div>
+          <div class="center sliding t1">千百旅</div>
+          <div class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+      </div>
+      <!-- navbar END--> 
+      <!-- page-content start-->
+       <div class="page-content">
+       		<div class="tPad mb25">
+            	<span class="color0 ft20">抱歉</span> 您还没有绑定“千百旅微信公众号”，无法进行合同签约操作。<span class="color0">您需要绑定后才能操作。</span>
+            </div>
+            <div class="t2 mb20">绑定方法</div>
+            <div class="plr20">
+            	<div class="tit1">1、请登录飞扬网站会员后台。</div>
+                <div class="imgBox"><img src="images/m1.jpg" alt=""></div>
+            	<div class="tit1">2、进入会员后台，找到您的订单</div>
+                <div class="imgBox"><img src="images/m2.jpg" alt=""></div>
+                <div class="tit1">3、打开微信扫一扫，扫描订单里的二维码，即可完成绑定。</div>
+                <div class="imgBox"><img src="images/m3.jpg" alt=""></div> 
+                 <div class="tit1 mb20">如果您还有其它疑问，请联系您的私人旅游顾问，或者致电服务热线4000-365-666。</div>               
+            </div>
+           
+       </div>
+      <!-- page-content END--> 
+    </div>
+    <!-- page END--> 
+  </div>
+</div>
+<!-- views END--> 
+<div class="mask"></div>
+<div class="popBox popTip"><a onClick="closeP();" class="closePop" href="#">×</a><div class="plr10 mb15"><img width="50" src="images/tip_bg.png" alt=""></div><div class="ft20 center mb15">恭喜您！签约成功！</div><div class="plr10"><img class="floatR" width="50" src="images/tip_bg2.png" alt=""></div></div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+<script type="text/javascript" src="js/touch.js"></script> 
+<script type="text/javascript" src="js/app.js"></script> 
+<script>
+$('#btnOk').bind('click',function(event) {
+	$(".mask, .popTip").show();	
+});
+
+function closeP() {$(".mask, .popBox").hide();	}
+</script>
+</body>
+</html>
